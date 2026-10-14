@@ -1,0 +1,103 @@
+
+<graph id="ASMR1_Sentinel1_Preprocessing">
+  <version>1.0</version>
+
+  <node id="Read">
+    <operator>Read</operator>
+    <parameters>
+      <file>${input}</file>
+    </parameters>
+  </node>
+
+  <node id="Subset">
+    <operator>Subset</operator>
+    <sources>
+      <source refid="Read"/>
+    </sources>
+    <parameters>
+      <geoRegion>POLYGON ((85.0 27.8, 85.5 27.8, 85.5 28.2, 85.0 28.2, 85.0 27.8))</geoRegion>
+      <copyMetadata>true</copyMetadata>
+    </parameters>
+  </node>
+
+  <node id="Apply_Orbit_File">
+    <operator>Apply-Orbit-File</operator>
+    <sources>
+      <source refid="Subset"/>
+    </sources>
+    <parameters>
+      <orbitType>Sentinel Precise (Auto Download)</orbitType>
+      <polyDegree>3</polyDegree>
+      <continueOnFail>false</continueOnFail>
+    </parameters>
+  </node>
+
+
+  <node id="Thermal_Noise_Removal">
+    <operator>ThermalNoiseRemoval</operator>
+    <sources>
+      <sourceProduct refid="Apply_Orbit_File"/>
+    </sources>
+    <parameters>
+      <removeThermalNoise>true</removeThermalNoise>
+      <reIntroduceThermalNoise>false</reIntroduceThermalNoise>
+    </parameters>
+  </node>
+
+
+  <node id="Calibration">
+    <operator>Calibration</operator>
+    <sources>
+      <source refid="Thermal_Noise_Removal"/>
+    </sources>
+    <parameters>
+      <outputSigmaBand>true</outputSigmaBand>
+      <outputBetaBand>false</outputBetaBand>
+      <outputGammaBand>false</outputGammaBand>
+      <outputImageScaleInDb>false</outputImageScaleInDb>
+      <selectedPolarisations>VV,VH</selectedPolarisations>
+      <auxFile>Latest Auxiliary File</auxFile>
+      <createGammaBand>false</createGammaBand>
+    </parameters>
+  </node>
+
+  <node id="Terrain_Correction">
+    <operator>Terrain-Correction</operator>
+    <sources>
+      <source refid="Calibration"/>
+    </sources>
+    <parameters>
+      <demName>Copernicus 30m Global DEM</demName>
+      <demResamplingMethod>BILINEAR_INTERPOLATION</demResamplingMethod>
+      <imgResamplingMethod>BILINEAR_INTERPOLATION</imgResamplingMethod>
+      <pixelSpacingInDegree>0.0001</pixelSpacingInDegree>
+      <mapProjection>WGS84(DD)</mapProjection>
+      <alignToStandardGrid>false</alignToStandardGrid>
+      <nodataValueAtSea>true</nodataValueAtSea>
+      <saveDEM>false</saveDEM>
+      <saveLatLon>false</saveLatLon>
+      <saveIncidenceAngleFromEllipsoid>false</saveIncidenceAngleFromEllipsoid>
+      <saveLocalIncidenceAngle>false</saveLocalIncidenceAngle>
+      <saveProjectedLocalIncidenceAngle>false</saveProjectedLocalIncidenceAngle>
+      <saveSelectedSourceBand>true</saveSelectedSourceBand>
+      <saveLayoverShadowMask>false</saveLayoverShadowMask>
+      <outputComplex>false</outputComplex>
+      <applyRadiometricNormalization>false</applyRadiometricNormalization>
+      <saveSigmaNought>true</saveSigmaNought>
+      <saveGammaNought>false</saveGammaNought>
+      <saveBetaNought>false</saveBetaNought>
+    </parameters>
+  </node>
+
+  <node id="Write">
+    <operator>Write</operator>
+    <sources>
+      <source refid="Terrain_Correction"/>
+    </sources>
+    <parameters>
+      <file>${output}</file>
+      <formatName>GeoTIFF</formatName>
+    </parameters>
+  </node>
+
+</graph>

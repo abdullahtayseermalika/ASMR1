@@ -1,0 +1,46 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Satellite data and large generated outputs
+/data/
+*.SAFE/
+*.zip
+*.tar
+*.tar.gz
+*.tif
+*.tiff
+*.img
+*.dim
+*./data/
+*.vrt
+*.nc
+*.jp2
+
+# Generated previews and temporary files
+*.png
+*.jpg
+*.jpeg
+*.tmp
+*.log
+
+# Editors and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
