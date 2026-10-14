@@ -106,4 +106,38 @@ git diff --check
 
 The second command should produce no output if there are no whitespace errors.
 
-Send me the output of these commands. After that, we'll review the files to be committed, make the initial commit, and connect the repository to GitHub.
+## Results and Visualizations
+
+The following figures show preliminary Sentinel-1 backscatter changes and flood-candidate detections over the study area in Nepal.
+
+### 1. Reference Flood Extent and Candidate Detection
+
+![Reference flood extent and candidate detections](results/figures/reference_overlay.png)
+
+The overlay compares the observed flood-extent reference with the detected candidate pixels. Spatial overlap is encouraging, but it does not independently establish classification accuracy.
+
+### 2. VH Backscatter Change
+
+![VH backscatter change](results/figures/vh_change_preview.png)
+
+This figure shows the change in VH-polarized radar backscatter between the pre-event and post-event acquisitions. Backscatter changes can reflect flooding as well as other surface changes.
+
+### 3. Dual-Polarization Flood Candidates — Version 3
+
+![Dual-polarization flood candidates](results/figures/flood_candidates_v3_dualpol_preview.png)
+
+Version 3 combines a VH backscatter-decrease threshold with a VV backscatter-decrease filter. The resulting pixels are candidate changes, not confirmed floodwater.
+
+### 4. Larger Candidate Clusters — Version 4
+
+![Larger flood-candidate clusters](results/figures/flood_candidates_v4_large_clusters_preview.png)
+
+Version 4 retains larger connected candidate clusters to help inspect spatial patterns and reduce isolated detections.
+
+### Reference Comparison
+
+The comparison report records the spatial agreement between candidate pixels and the observed reference polygon.
+
+[View the reference comparison report](results/reports/reference_comparison.txt)
+
+**Important:** The reference is dated 27 August 2026, while the post-event Sentinel-1 image is dated 5 September 2026. Results are preliminary and require further independent validation.

@@ -34,6 +34,8 @@ env/
 
 # Generated previews and temporary files
 *.png
+!results/figures/
+!results/figures/*.png
 *.jpg
 *.jpeg
 *.tmp

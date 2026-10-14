@@ -1,0 +1,16 @@
+ASMR1 — Observed Reference Comparison
+Reference file: /mnt/hdd/ASMR1-data/reference/hot_flood_npl_flood_extent.geojson
+Candidate raster: /mnt/hdd/ASMR1-data/processed/flood_candidates_v3_dualpol.tif
+Raster CRS: EPSG:4326
+Reference reported area (km²): 31.7
+Raster bounds: BoundingBox(left=84.9592520753, bottom=27.7181998893, right=85.5362520753, top=28.2822998893)
+Valid raster pixels: 25751893
+Valid pixels inside reference polygon: 177976
+Reference polygon pixels outside valid raster: 20551
+V3 candidate pixels total: 13849
+V3 candidates inside reference: 12928
+V3 candidates outside reference: 921
+V3 candidates inside reference (%): 93.35
+
+Caution: the reference is observed 27 August 2026, while the post-event Sentinel-1 scene is from 5 September 2026.
+Overlap is not proof of flood detection accuracy.
