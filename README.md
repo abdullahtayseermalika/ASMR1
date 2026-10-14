@@ -108,6 +108,13 @@ The second command should produce no output if there are no whitespace errors.
 
 ## Results and Visualizations
 
+### Project Workflow
+
+![ASMR1 workflow diagram](results/figures/asmr1_workflow.png)
+
+The workflow covers Sentinel-1 data acquisition, SAR preprocessing, raster alignment, change detection, candidate filtering, and reference comparison.
+
+
 The following figures show preliminary Sentinel-1 backscatter changes and flood-candidate detections over the study area in Nepal.
 
 ### 1. Reference Flood Extent and Candidate Detection
