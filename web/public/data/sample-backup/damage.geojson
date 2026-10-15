@@ -1,0 +1,127 @@
+{
+  "type": "FeatureCollection",
+  "name": "damage",
+  "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLD-101",
+        "type": "damaged_building",
+        "building_use": "Residential Home",
+        "damage_grade": "Grade 3 - Heavy Ground Floor Submersion",
+        "in_flood_extent": true,
+        "structure_material": "Brick & Concrete",
+        "estimated_occupants": 7,
+        "water_depth_contact_m": 1.4,
+        "roof_rescue_possible": "Yes"
+      },
+      "geometry": { "type": "Point", "coordinates": [87.054, 26.702] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLD-102",
+        "type": "damaged_building",
+        "building_use": "Primary School / Community Shelter",
+        "damage_grade": "Grade 2 - Partial Perimeter Inundation",
+        "in_flood_extent": true,
+        "structure_material": "Reinforced Concrete Frame",
+        "estimated_occupants": 35,
+        "water_depth_contact_m": 0.8,
+        "roof_rescue_possible": "Yes"
+      },
+      "geometry": { "type": "Point", "coordinates": [87.067, 26.708] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLD-103",
+        "type": "damaged_building",
+        "building_use": "Sub-Health Post & Dispensary",
+        "damage_grade": "Grade 4 - Critical Flooding & Power Loss",
+        "in_flood_extent": true,
+        "structure_material": "Brick Masonry",
+        "estimated_occupants": 4,
+        "water_depth_contact_m": 1.9,
+        "medical_supplies_at_risk": "Yes"
+      },
+      "geometry": { "type": "Point", "coordinates": [87.042, 26.691] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLD-104",
+        "type": "damaged_building",
+        "building_use": "Grain Storage & Mill",
+        "damage_grade": "Grade 3 - Complete Ground Flooding",
+        "in_flood_extent": true,
+        "structure_material": "Corrugated Steel & Timber",
+        "estimated_occupants": 2,
+        "water_depth_contact_m": 1.6,
+        "roof_rescue_possible": null
+      },
+      "geometry": { "type": "Point", "coordinates": [87.078, 26.695] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLD-105",
+        "type": "damaged_building",
+        "building_use": "Residential Cluster (Duplex)",
+        "damage_grade": "Grade 2 - Flood Fringe Contamination",
+        "in_flood_extent": true,
+        "structure_material": null,
+        "estimated_occupants": 12,
+        "water_depth_contact_m": 0.6,
+        "roof_rescue_possible": "Yes"
+      },
+      "geometry": { "type": "Point", "coordinates": [87.126, 26.732] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLD-106",
+        "type": "damaged_building",
+        "building_use": "Rural Cooperative Dairy Bank",
+        "damage_grade": "Grade 3 - Equipment Submerged",
+        "in_flood_extent": true,
+        "structure_material": "Masonry",
+        "estimated_occupants": null,
+        "water_depth_contact_m": 1.3,
+        "generator_status": "Offline"
+      },
+      "geometry": { "type": "Point", "coordinates": [87.135, 26.741] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLD-107",
+        "type": "damaged_building",
+        "building_use": "Residential Farmstead",
+        "damage_grade": "Grade 4 - Fast Moving Current Inundation",
+        "in_flood_extent": true,
+        "structure_material": "Bamboo & Thatched Earth",
+        "estimated_occupants": 9,
+        "water_depth_contact_m": 1.8,
+        "livestock_stranded": "Yes"
+      },
+      "geometry": { "type": "Point", "coordinates": [87.088, 26.768] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLD-108",
+        "type": "damaged_building",
+        "building_use": "Community Hall",
+        "damage_grade": "Grade 2 - Flood Ingress",
+        "in_flood_extent": true,
+        "structure_material": "Concrete Block",
+        "estimated_occupants": 18,
+        "water_depth_contact_m": 0.7,
+        "roof_rescue_possible": "Yes"
+      },
+      "geometry": { "type": "Point", "coordinates": [87.072, 26.651] }
+    }
+  ]
+}

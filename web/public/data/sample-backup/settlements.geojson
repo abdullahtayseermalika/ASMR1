@@ -1,0 +1,127 @@
+{
+  "type": "FeatureCollection",
+  "name": "settlements",
+  "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SET-01",
+        "type": "settlement",
+        "name": "Bhutaha Central Hamlet",
+        "status": "cut_off",
+        "population": 1280,
+        "isolation_cause": "All connecting access roads flooded > 0.8m",
+        "shelter_points": 2,
+        "urgent_needs": "Drinking Water, Chlorine Tablets, Baby Food",
+        "recommended_transport": "Inflatable Zodiac Boats / High-Clearance Amphibious"
+      },
+      "geometry": { "type": "Point", "coordinates": [87.058, 26.705] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SET-02",
+        "type": "settlement",
+        "name": "Haripur Lowland Settlement",
+        "status": "cut_off",
+        "population": 640,
+        "isolation_cause": "Culvert washed out along feeder road; surrounded by standing water",
+        "shelter_points": 1,
+        "urgent_needs": "Food rations, Medical triage for waterborne illness",
+        "recommended_transport": "Watercraft Only"
+      },
+      "geometry": { "type": "Point", "coordinates": [87.129, 26.738] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SET-03",
+        "type": "settlement",
+        "name": "Sunsari River Island Community",
+        "status": "cut_off",
+        "population": 390,
+        "isolation_cause": "Surrounded on all sides by 2.2m river overflow",
+        "shelter_points": 0,
+        "urgent_needs": "Helicopter Air-Drop / Complete Evacuation",
+        "recommended_transport": "Rotary Wing Air-Lift / Motorized Rescue Raft"
+      },
+      "geometry": { "type": "Point", "coordinates": [87.086, 26.711] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SET-04",
+        "type": "settlement",
+        "name": "Northern Ridge Ward 3",
+        "status": "connected",
+        "population": 2150,
+        "isolation_cause": null,
+        "shelter_points": 5,
+        "urgent_needs": "Staging base for displaced persons",
+        "recommended_transport": "Standard Overland Trucks Open"
+      },
+      "geometry": { "type": "Point", "coordinates": [87.085, 26.791] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SET-05",
+        "type": "settlement",
+        "name": "Eastern Junction Hub",
+        "status": "connected",
+        "population": 4800,
+        "isolation_cause": null,
+        "shelter_points": 8,
+        "urgent_needs": "Logistics depot, fuel storage",
+        "recommended_transport": "Heavy Haulage & National Highway Operational"
+      },
+      "geometry": { "type": "Point", "coordinates": [87.172, 26.745] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SET-06",
+        "type": "settlement",
+        "name": "Southern Dike Worker Camp",
+        "status": "connected",
+        "population": 190,
+        "isolation_cause": null,
+        "shelter_points": 1,
+        "urgent_needs": "Sandbag stockpiles",
+        "recommended_transport": "Southern Perimeter Track (4WD Only)"
+      },
+      "geometry": { "type": "Point", "coordinates": [87.035, 26.638] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SET-07",
+        "type": "settlement",
+        "name": "Koshi Western Fringe Outpost",
+        "status": "not_assessed",
+        "population": null,
+        "isolation_cause": "Steep slope SAR layover shadow and dense riverine tree canopy",
+        "shelter_points": null,
+        "urgent_needs": "Visual drone or field scout verification required",
+        "recommended_transport": "Foot Patrol Scout"
+      },
+      "geometry": { "type": "Point", "coordinates": [87.028, 26.732] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SET-08",
+        "type": "settlement",
+        "name": "Chure Foothill Remote Cluster",
+        "status": "not_assessed",
+        "population": null,
+        "isolation_cause": "OpenStreetMap trail incomplete; sensor geometry blindspot",
+        "shelter_points": null,
+        "urgent_needs": "UAV flyover confirmation needed",
+        "recommended_transport": "Unverified - Scout Team Needed"
+      },
+      "geometry": { "type": "Point", "coordinates": [87.118, 26.782] }
+    }
+  ]
+}

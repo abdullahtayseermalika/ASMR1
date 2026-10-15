@@ -1,0 +1,161 @@
+@import "tailwindcss";
+
+:root {
+  --bg-page: #000000;
+  --bg-panel: #0c0c0e;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-hover: rgba(255, 255, 255, 0.16);
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  --text-caption: rgba(255, 255, 255, 0.45);
+
+  /* Tuned semantic colors on pure black */
+  --color-flood: #4da3ff;
+  --color-damage: #ff8a3d;
+  --color-cutoff: #ff4d5e;
+  --color-connected: #3ddc97;
+  --color-unassessed: #8a8a93;
+}
+
+body {
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Subtle card entry animation (300ms) */
+@keyframes cardFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-card-fade {
+  animation: cardFadeIn 300ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Dark mode filter on OpenStreetMap tiles (no API key, zero watermarks) */
+.leaflet-tile-pane {
+  filter: invert(1) hue-rotate(180deg) brightness(0.95) contrast(0.9) !important;
+}
+
+.osm-dark-tiles {
+  filter: invert(1) hue-rotate(180deg) brightness(0.95) contrast(0.9) !important;
+}
+
+/* Leaflet Popups & Dark Theme styling */
+.floodscope-popup .leaflet-popup-content-wrapper {
+  background: #0c0c0e !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-radius: 18px !important;
+  padding: 0 !important;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8) !important;
+  backdrop-filter: blur(16px);
+}
+
+.floodscope-popup .leaflet-popup-content {
+  margin: 0 !important;
+  line-height: 1.4 !important;
+}
+
+.floodscope-popup .leaflet-popup-tip {
+  background: #0c0c0e !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+
+.floodscope-popup a.leaflet-popup-close-button {
+  color: rgba(255, 255, 255, 0.45) !important;
+  padding: 8px !important;
+}
+
+.floodscope-popup a.leaflet-popup-close-button:hover {
+  color: #ffffff !important;
+}
+
+/* Custom Marker styles */
+.custom-orange-building-marker {
+  background: transparent;
+  border: none;
+}
+
+.custom-settlement-marker {
+  background: transparent;
+  border: none;
+}
+
+/* Smooth Fade transitions for Leaflet layers when toggled */
+.leaflet-overlay-pane svg path {
+  transition: opacity 300ms ease-in-out, fill-opacity 300ms ease-in-out, stroke-opacity 300ms ease-in-out;
+}
+
+.leaflet-marker-pane .leaflet-marker-icon {
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
+
+/* Crossfade transitions for bilingual text switching */
+.report-crossfade {
+  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1), transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.report-crossfade-hidden {
+  opacity: 0;
+  transform: translateY(4px);
+}
+
+.report-crossfade-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* prefers-reduced-motion overrides to turn off all animations when requested */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+
+  .animate-card-fade,
+  .leaflet-overlay-pane svg path,
+  .leaflet-marker-pane .leaflet-marker-icon,
+  .report-crossfade {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+  }
+}
+
+/* Print Friendly Styles */
+@media print {
+  @page {
+    margin: 1cm;
+    size: portrait;
+  }
+
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    font-size: 11pt;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .sitrep-print-container {
+    box-shadow: none !important;
+    border: none !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+}

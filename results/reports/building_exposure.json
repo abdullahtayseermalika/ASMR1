@@ -1,0 +1,12 @@
+{
+  "analysis_name": "Preliminary building exposure to flood-change candidates",
+  "candidate_raster": "/mnt/hdd/ASMR1-data/processed/flood_candidates_v3_dualpol.tif",
+  "building_source": "/mnt/hdd/ASMR1-data/reference/building_footprints.geojson",
+  "crs": "EPSG:4326",
+  "candidate_pixels_detected": 13849,
+  "building_footprints_assessed": 347683,
+  "potentially_exposed_buildings": 105,
+  "potentially_exposed_percent": 0.03,
+  "output_geojson": "/home/herspoet/Projects/ASMR1/web/public/data/buildings.geojson",
+  "interpretation": "Potential exposure only. Intersection with preliminary flood-change candidates does not confirm inundation or damage."
+}

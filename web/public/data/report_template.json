@@ -1,0 +1,30 @@
+{
+  "en": {
+    "title": "FLOOD RAPID SITUATION REPORT (SITREP)",
+    "subtitle": "Satellite Flood-Analysis Pipeline Output for Disaster Response & Rescue Operations",
+    "alert_level": "RED ADVISORY / PRIORITY EVACUATION MONITORING",
+    "section_metadata": "1. Satellite Acquisition & Analysis Parameters",
+    "metadata_text": "The analysis was produced on {snapshot_date} following the hydrometeorological event detected on {event_date}. Sentinel-1 SAR acquisition utilized relative orbit number(s) {sar_orbit_numbers}. Surface water segmentation applied the {threshold_method} calibrated at {threshold_value}.",
+    "section_findings": "2. High-Priority Damage & Impact Metrics",
+    "findings_text": "Satellite radar observation identified {flood_polygons_count} distinct standing flood extent polygons across the monitored region. Within or directly fringing the flood extent, {buildings_in_flood} structures have been tagged as damaged or inundated. Transport connectivity assessment indicates {affected_roads} road segments are submerged or rendered impassable, while {unaffected_roads} road links remain intact. In populated sectors, {settlements_cutoff} settlements are currently isolated (cut off), {settlements_connected} maintain overland access, and {settlements_unassessed} settlements could not be definitively assessed due to complex radar shadow, vegetation canopy, or missing OpenStreetMap base network data.",
+    "section_priorities": "3. Tactical Rescue & Relief Recommendations",
+    "priorities_text": "• Prioritize waterborne logistics, amphibious vehicles, and rotary-wing airdrop scouting toward the {settlements_cutoff} isolated settlement zones.\n• Establish staging checkpoints before attempting vehicle transit along the {affected_roads} compromised road corridors.\n• Maintain secondary reconnaissance on the {settlements_unassessed} unassessed localities where steep terrain radar masking or OSM gaps obscure ground truth.",
+    "section_limitations": "4. Technical Sensor & Methodology Limitations",
+    "limitations_text": "Sentinel satellites revisit an area every few days and cannot warn of sudden collapses. Radar can confuse debris with other rough or bright surfaces. OpenStreetMap may miss settlements in remote areas, and those are not assessed. Radar shadow and layover on steep slopes are flagged separately, not counted as flood. This is an educational prototype, not an operational tool.",
+    "attribution_notice": "Contains modified Copernicus Sentinel data 2026. Produced using Copernicus WorldDEM-30 © DLR e.V. 2010–2014 and © Airbus Defence and Space GmbH 2014–2018 provided under COPERNICUS by the European Union and ESA; all rights reserved. © OpenStreetMap contributors. Training data: Bountos et al., 2024 (Kuro Siwo); Bonafilia et al., CVPR Workshops 2020 (Sen1Floods11), if used."
+  },
+  "ne": {
+    "title": "बाढी द्रुत स्थिति प्रतिवेदन (सिटरेप)",
+    "subtitle": "विपद् प्रतिकार्य तथा उद्धार टोलीका लागि उपग्रह बाढी-विश्लेषण पाइपलाइन नतिजा",
+    "alert_level": "रातो चेतावनी / प्राथमिकता उद्धार अनुगमन",
+    "section_metadata": "१. उपग्रह डेटा संकलन तथा विश्लेषण मापदण्ड",
+    "metadata_text": "यो विश्लेषण {event_date} मा दर्ता गरिएको जल-मौसमजन्य घटनापश्चात {snapshot_date} मा तयार गरिएको हो। सेन्टिनेल-१ सार (SAR) उपग्रहले सापेक्ष कक्ष नम्बर {sar_orbit_numbers} प्रयोग गरेको थियो। सतहको जल क्षेत्र पहिचानका लागि {threshold_value} मा क्यालिब्रेट गरिएको {threshold_method} विधि लागू गरिएको छ।",
+    "section_findings": "२. उच्च प्राथमिकता क्षति तथा प्रभाव विवरण",
+    "findings_text": "उपग्रह राडार अवलोकनले अनुगमन गरिएको क्षेत्रमा {flood_polygons_count} वटा स्पष्ट जलमग्न बहुभुज (बाढी क्षेत्र) पहिचान गरेको छ। बाढीको परिधिभित्र वा प्रत्यक्ष जोखिममा रहेका {buildings_in_flood} संरचनाहरू क्षतिग्रस्त वा डुबानमा परेको अभिलेख गरिएको छ। सडक सञ्जाल विश्लेषण अनुसार {affected_roads} वटा सडक खण्डहरू जलमग्न वा अवरुद्ध भएका छन् भने {unaffected_roads} वटा सडक खण्डहरू सुचारु अवस्थामा छन्। मानव बस्ती तर्फ, {settlements_cutoff} वटा बस्तीहरू सडक सम्पर्क विच्छेद भई पूर्ण रूपमा अलपत्र (कट अफ) छन्, {settlements_connected} बस्तीहरू सुरक्षित सडक सञ्जालसँग जोडिएका छन्, र जटिल राडार छायाँ, वनस्पति वा ओपनस्ट्रिटम्याप (OSM) तथ्याङ्क अभावका कारण {settlements_unassessed} बस्तीहरूको निश्चित मूल्याङ्कन हुन सकेको छैन।",
+    "section_priorities": "३. रणनीतिक उद्धार तथा राहत कार्य सिफारिसहरू",
+    "priorities_text": "• स्थल सम्पर्क टुटेका {settlements_cutoff} वटा अलपत्र बस्तीहरूमा डुङ्गा, जल-थल सवारी वा हेलिकप्टरमार्फत तत्काल राहत पुर्‍याउने कार्यलाई प्राथमिकता दिनुहोस्।\n• अवरुद्ध भएका {affected_roads} वटा सडक खण्डहरूमा सुरक्षा जाँच चौकी स्थापना गरी अनधिकृत सवारी आवतजावत नियन्त्रण गर्नुहोस्।\n• राडार छायाँ तथा तथ्याङ्क अभाव भएका {settlements_unassessed} वटा मूल्याङ्कन नभएका बस्तीहरूमा स्थलगत टोली खटाई वास्तविक वस्तुस्थिति यकिन गर्नुहोस्।",
+    "section_limitations": "४. प्राविधिक सेन्सर तथा विश्लेषणका सीमितताहरू",
+    "limitations_text": "Sentinel satellites revisit an area every few days and cannot warn of sudden collapses. Radar can confuse debris with other rough or bright surfaces. OpenStreetMap may miss settlements in remote areas, and those are not assessed. Radar shadow and layover on steep slopes are flagged separately, not counted as flood. This is an educational prototype, not an operational tool.",
+    "attribution_notice": "Contains modified Copernicus Sentinel data 2026. Produced using Copernicus WorldDEM-30 © DLR e.V. 2010–2014 and © Airbus Defence and Space GmbH 2014–2018 provided under COPERNICUS by the European Union and ESA; all rights reserved. © OpenStreetMap contributors. Training data: Bountos et al., 2024 (Kuro Siwo); Bonafilia et al., CVPR Workshops 2020 (Sen1Floods11), if used."
+  }
+}

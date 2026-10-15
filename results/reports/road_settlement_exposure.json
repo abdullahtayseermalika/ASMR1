@@ -1,0 +1,12 @@
+{
+  "analysis": "Preliminary road and settlement exposure",
+  "candidate_polygons": 791,
+  "road_source_features": 32879,
+  "road_line_features_assessed": 31449,
+  "road_lines_intersecting_candidates": 147,
+  "road_intersection_percent": 0.47,
+  "settlement_points_assessed": 637,
+  "settlements_intersecting_candidates": 0,
+  "settlements_within_500m_of_candidates": 37,
+  "interpretation": "Spatial intersection and proximity indicate potential exposure only. They do not confirm road damage, passability, inundation, or loss of settlement access."
+}
