@@ -1,5 +1,5 @@
 
-# ASMR1 — Mapping Flood Damage from Space
+# FLOODTRACE — Mapping Flood-Related Changes from Space
 
 A satellite remote-sensing project investigating flood-related surface changes in Nepal using Sentinel-1 SAR imagery.
 
@@ -151,7 +151,7 @@ The comparison report records the spatial agreement between candidate pixels and
 
 ## 🌐 Live Demo
 
-**[Open FloodScope Dashboard](https://floodscope-asmr1.pages.dev/)**
+**[Open FLOODTRACE Dashboard](https://floodscope-asmr1.pages.dev/)**
 
 Flood-change candidates and preliminary exposure indicators for disaster assessment in Nepal.
 
