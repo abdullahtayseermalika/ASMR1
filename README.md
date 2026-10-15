@@ -148,3 +148,10 @@ The comparison report records the spatial agreement between candidate pixels and
 [View the reference comparison report](results/reports/reference_comparison.txt)
 
 **Important:** The reference is dated 27 August 2026, while the post-event Sentinel-1 image is dated 5 September 2026. Results are preliminary and require further independent validation.
+
+## 🌐 Live Demo
+
+**[Open FloodScope Dashboard](https://floodscope-asmr1.pages.dev/)**
+
+Flood-change candidates and preliminary exposure indicators for disaster assessment in Nepal.
+
